@@ -1,0 +1,85 @@
+.area{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: var(--area-porta-largura);
+    height: var(--area-porta-altura);
+    align-items: center;
+    margin: 5px;
+}
+
+.estrutura{
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    border-left: 5px solid rgb(133, 66, 46);
+    border-right: 5px solid rgb(133, 66, 46);
+    border-top: 5px solid rgb(133, 66, 46);
+    width: 90%;
+    background-color: #0005;
+}
+
+.porta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    flex: 1;
+    background-color: brown;
+    border-top: 6px solid rgb(209, 80, 80);
+    border-right: 6px solid rgb(189, 63, 63);
+    border-bottom: 6px solid rgb(87, 19, 19);
+    border-left: 6px solid rgb(117, 27, 27);
+}
+
+.numero{
+    font-size: 3rem;
+}
+
+.macaneta{
+    position: absolute;
+    align-self: flex-start;
+    top: calc(0.45 * var(--area-porta-altura));
+    left: 30px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    border-right: 4px solid rgb(192, 108, 82);
+    background-color: rgb(184, 94, 67);
+}
+
+.macaneta:hover{
+    border-right: 4px solid var(--porta-selecionada);
+    background-color: var(--porta-selecionada);
+}
+
+.chao{
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+    border-left: 2px solid rgb(131, 131, 131);
+    border-right: 2px solid rgb(232, 232, 232);
+    border-bottom: 3px solid rgb(131, 131, 131);
+}
+
+.selecionada{
+    border-left: 5px solid var(--porta-selecionada);
+    border-right: 5px solid var(--porta-selecionada);
+    border-top: 5px solid var(--porta-selecionada);
+}
+
+.selecionada .numero{
+    color: var(--porta-selecionada)
+}
+
+.estrutura:hover{
+    border-left: 5px solid var(--porta-hover);
+    border-right: 5px solid var(--porta-hover);
+    border-top: 5px solid var(--porta-hover);
+}
+
+.estrutura.selecionada:hover{
+    border-left: 5px solid var(--porta-selecionada-hover);
+    border-right: 5px solid var(--porta-selecionada-hover);
+    border-top: 5px solid var(--porta-selecionada-hover);
+}
