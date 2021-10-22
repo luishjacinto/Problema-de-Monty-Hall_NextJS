@@ -13,7 +13,7 @@ export default function Formulario() {
         <div className={styles.formulario}>
             <div>
                 <Cartao bgcolor="#dd770a">
-                    <h1>Monty Hall</h1>
+                    <h1>Monty Hall Luis</h1>
                 </Cartao>
                 <Cartao>
                     <EntradaNumerica
